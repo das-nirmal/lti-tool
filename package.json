@@ -1,0 +1,25 @@
+{
+  "name": "lti-tool",
+  "version": "0.1.1",
+  "description": "LTI POC: Tool Provider Implementation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/das-nirmal/lti-tool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/das-nirmal/lti-tool/issues"
+  },
+  "homepage": "https://github.com/das-nirmal/lti-tool#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ims-lti": "^3.0.2",
+    "morgan": "^1.9.1"
+  }
+}

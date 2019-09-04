@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+</head>
+<body onload="onBodyLoad()">
+    <div class="container">
+        <h1>App Page!</h1>
+
+        <section>
+            <h3>LTI Launch Parameters:</h3>
+            <div id="lti-params">
+
+            </div>
+        </section>
+    </div>    
+</body>
+
+<script>
+    function onBodyLoad() {
+        const urlParams = new URLSearchParams(window.location.search), 
+            domDiv = document.querySelector('#lti-params');
+        let text = '';
+        for (let key of urlParams.keys()) {
+            text += `${key} : ${urlParams.get(key)} <br>`;
+        }
+
+        domDiv.innerHTML = text; 
+    }
+</script>
+
+</html>

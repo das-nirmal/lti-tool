@@ -1,0 +1,7 @@
+{
+    "port": 3000,
+    "consumerStore": {
+        "consumer": "secret",
+        "consumer1": "secret1"
+    }
+}
