@@ -28,7 +28,7 @@ ${JSON.stringify(err, null, 4)}`);
         }
 
         // redirect to success route
-        return res.redirect('/app.html?' + querystring.stringify(req.body));
+        return res.redirect('/app?' + querystring.stringify(req.body));
     });
 }
 

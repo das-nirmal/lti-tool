@@ -7,6 +7,9 @@ const routes = require('./config/routes');
 
 const app = express();
 
+app.set('views', __dirname + '/views')
+app.set('view engine', 'ejs');
+
 // setup logging
 app.use(morgan('short'));
 
@@ -15,8 +18,6 @@ app.use(express.static(path.resolve(__dirname, 'public')));
 
 // configure parsing of form params
 app.use(express.urlencoded( {extended: false} ));
-
-app.get('/', (req, res) => res.sendFile(path.resolve(process.cwd(), 'index.html')));
 
 // configure routes
 app.use('/', routes);
