@@ -1,7 +1,7 @@
 const lti = require('ims-lti');
 const querystring = require('querystring');
 
-const config = require('../../config/app-config');
+const config = require('../config/app-config');
 
 function validateLaunch(req, res) {
     
