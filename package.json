@@ -19,7 +19,7 @@
   "homepage": "https://github.com/das-nirmal/lti-tool#readme",
   "dependencies": {
     "ejs": "^2.7.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ims-lti": "^3.0.2",
     "morgan": "^1.9.1"
   }
